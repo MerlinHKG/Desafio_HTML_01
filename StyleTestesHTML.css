@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #000000, rgb(16, 161, 228));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container {
+  background: rgb(255, 255, 255);
+  max-width: 350px;
+  min-height: 55vh;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  color: black;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 186px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #000000, rgb(16, 161, 228));
+}
+
+.question {
+  font-size: 20px;
+}
+
+.resultado_errado {
+  background-color: red;
+  padding: 5px;
+  color: white;
+}
+
+.resultado_certo {
+  background-color: green;
+  padding: 5px;
+  color: white;
+}
+
+form input[type="submit"] {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  background: linear-gradient(to left, #000000, rgb(16, 161, 228));
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3 ease;
+}
+
+form input[type="submit"]:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, #000000, rgb(16, 161, 228));
+}

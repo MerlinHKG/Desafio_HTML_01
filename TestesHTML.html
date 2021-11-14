@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercicio_01</title>
+    <link rel="stylesheet" href="StyleTestesHTML.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Exercicio 01</h1>
+      <div class="row">
+        <div class="question">
+          <form method="POST" id="answer">
+            <div class="question">
+              De acordo com a Filosofia Africana Ubuntu, eu sou porque...
+            </div>
+            <br /><br />
+            <p>
+              <input type="radio" id="a" name="resposta" value="a" />
+              <label>A) Sou bom. </label>
+            </p>
+
+            <p>
+              <input type="radio" id="b" name="resposta" value="b" />
+              <label for="">B) Sou rico.</label>
+            </p>
+
+            <p>
+              <input
+                type="radio"
+                id="c"
+                name="resposta"
+                value="c"
+                data-resposta="true"
+                class="resposta-certa"
+              />
+              <label for="">C) Nós somos. </label>
+            </p>
+
+            <p>
+              <input type="radio" id="d" name="resposta" value="d" />
+              <label for="">D) Nóis é. </label>
+            </p>
+
+            <input type="submit" name="enviar" value="enviar" />
+          </form>
+        </div>
+      </div>
+      <script src="jquery.js"></script>
+      <script src="exercicio01.js"></script>
+    </main>
+  </body>
+</html>
